@@ -7,8 +7,8 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 public class ClientXat {
-    private String nom;
-    private Socket socket;
+    private final String nom;
+    private final Socket socket;
     private BufferedReader in;
     private PrintWriter out;
 

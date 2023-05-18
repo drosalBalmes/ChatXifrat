@@ -7,8 +7,8 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 public class GestorClient implements Runnable {
-    private ServidorXat servidor;
-    private Socket socket;
+    private final ServidorXat servidor;
+    private final Socket socket;
     private BufferedReader in;
     private PrintWriter out;
     private String nomClient;

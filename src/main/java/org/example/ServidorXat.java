@@ -1,17 +1,14 @@
 package org.example;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ServidorXat {
-    private int port;
-    private List<GestorClient> clients;
+    private final int port;
+    private final List<GestorClient> clients;
 
     public ServidorXat(int port) {
         this.port = port;
